@@ -43,6 +43,7 @@
 <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
 <div class="container topnav">
 <!-- Brand and toggle get grouped for better mobile display -->
+<body id="home">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 <span class="sr-only">Toggle navigation</span>
@@ -57,12 +58,6 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
 <a href="#home">Home</a>
-</li>
-<li>
-<a href="#about">Portfolio</a>
-</li>
-<li>
-<a href="#about">About</a>
 </li>
 <li>
 <a href="#contact">Contact</a>
@@ -212,7 +207,7 @@
                 </div>
         
           <!-- calculator section -->
-    <div class="container">
+    <div id="calculate" class="container">
       <br>
       <form class="myForm">
         <div class="row">
@@ -308,7 +303,10 @@
 <div class="footer" id="contact">
 <footer>
 <div class="container">
-<ul class="list-inline">
+
+<div class="row">
+	<div class="col-md-12">
+		<ul class="list-inline">
 <li>
 <a href="https://github.com/jobm" target="_blank" class="btn btn-default btn-lg ">
 <i class="fa fa-facebook"></i>
@@ -328,22 +326,29 @@
 </a>
 </li>
 </ul>
-    <br /><br />
-<ul class="nav nav-pills">
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-12">
+		<ul class="nav nav-pills">
 <li role="presentation" class="active">
-<a href="#">Home</a>
+<a href="#home">Home</a>
 </li>
 <li role="presentation" class="active">
-<a href="#">About</a>
+<a href="#contact">Contact</a>
 </li>
 <li role="presentation" class="active">
-<a href="#">Calculate</a>
+<a href="#calculate">Calculate</a>
 </li>
 </ul>
 <br />
 <p class="copyright text-muted small">Copyright © 2015 SLIM FIT. All Rights Reserved</p>
 </div>
     
+	</div>
+</div>
+
 </footer>
     
 </body>
