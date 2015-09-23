@@ -1,24 +1,217 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
 
+<html>
+
+    <head>
+
+
+  <title>Standard Calculator</title>
+        
+        <meta charset="utf-8">
+        
+   
+        
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/site.css" media="screen" title="no title" charset="utf-8">
+        
+    <!--<link rel="stylesheet" href="css/site.css" media="screen" title="no title" charset="utf-8">-->
+        
     <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+        
     <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
-     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Jura">
+        
+     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Jura"> 
+        
+    <link rel="stylesheet" href="css/styles.css">  <!----davis css--->
+        
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
 
 
      <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        
      <script src="js/app.js" type="text/javascript"></script>
-     <title></title>
-  </head>
-  <body>
-    <!-- calculator section -->
+        
+        
+     
+</head>
+
+<body>
+    
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+<div class="container topnav">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand topnav" href="#" target="_blank">Slim Fit</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="#home">Home</a>
+</li>
+<li>
+<a href="#about">Portfolio</a>
+</li>
+<li>
+<a href="#about">About</a>
+</li>
+<li>
+<a href="#contact">Contact</a>
+</li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+
+
+
+<!----------------code for the nav bar starts here---------------------------------------------------------------------------->
+
+
+
+<!---<div id="header">
+
+<div class="logo"><a href="#">Slim<span>Fit</span></a></div>
+
+
+                 <nav class="dash">
+
+                     <ul>
+                              <li><a href="#home">Home</a></li>
+
+                              <li><a href="#news">About</a></li>
+
+                              <li><a href="#contact">Know your BMI</a></li>
+
+                              <li><a href="#about">Contact Us</a></li>
+                    </ul>
+
+                 </nav>
+
+
+
+    </div>--->
+
+
+
+<!----------------code for the nav bar ends here------------section 1 starts here------------------------------------------------------>
+
+
+
+<div id="part1">
+
+
+        <h1><strong>Slim fit</strong></h1>
+
+        <h2>Loose weight with our creative workout techniques</h2>
+
+
+</div>
+
+
+<br />
+<!----------------section 1 ends here-----------------------section 2 starts here------------------------------------------------------>
+
+
+<div class="container">
+
+
+        <div class="row">
+            
+            <h1 align="center">Be the best by working with the best</h1><br /><br /><br />
+    
+                <div class="col-md-4">
+                    
+                      
+
+                     <h2>Best trainers around!</h2><br /><br />
+
+                        <img class="img-responsive" src="wplan.png" alt="" width="200" height="200"><br /><br />  
+
+                        <p>Come and learn from experienced trainers</p>
+
+
+                </div>
+            
+    
+                    <div class="col-md-4"> 
+                        
+                        
+
+                        <h2>Customized workout plan!</h2><br /><br />
+
+                           <img class="img-responsive" src="wplan.png" alt="" width="200" height="200"><br /><br />    
+                    
+
+                        <p>We customize your workout depending on your needs</p>
+                        
+            </div>
+
+
+            
+            
+            
+            
+                <div class="col-md-4"> 
+                    
+                 
+
+                    <h2>Motivation!</h2><br /><br />
+
+                         <img class="img-responsive" src="wplan.png" alt="" width="200" height="200"><br /><br />  
+
+                       <p>We connect you to top athletes to learn their fitness tips</p>
+
+              
+
+
+                </div>
+    
+    
+        </div>
+
+    
+
+
+          
+
+
+           
+
+
+    </div>
+
+<br />
+
+<!----------------section 2 ends here-----------------------section 3 starts here------------------------------------------------------>
+
+
+
+    <div id="part3">
+        
+        
+
+             <div class="bottom">
+
+                         <h1>Calculate your BMI, ITS FREE</h1>
+                         <h2>Loose weight with our creative workout techniques</h2>
+                 
+                 
+
+                </div>
+        
+          <!-- calculator section -->
     <div class="container">
       <br>
       <form class="myForm">
@@ -83,6 +276,7 @@
           <div class="col-md-6">
             <h1 id="bmi_results" style="text-align:center;">0.00</h1>
             <hr>
+               <h1 id="bmi_class" style="text-align:center;"></h1>
             <h1 style="text-align:center;"></h1>
           </div>
         </div>
@@ -90,5 +284,68 @@
       </div>
     </div>
     <!-- end of calculator section -->
-  </body>
+    </div>
+
+<!----------------section 3 ends here-----------------------Footer section starts here-------------------------------------------------->
+
+
+
+
+
+    <!---------unknown div----</div>------>
+
+
+
+<div id="close">
+
+    <div id="map">
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.792177706332!2d36.76551099999999!3d-1.2994938999999943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6bf7445dc1%3A0x940b62a3c8efde4c!2sMoringa+School!5e0!3m2!1sen!2ske!4v1442941382582" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+    </div>
+<div class="footer" id="contact">
+<footer>
+<div class="container">
+<ul class="list-inline">
+<li>
+<a href="https://github.com/jobm" target="_blank" class="btn btn-default btn-lg ">
+<i class="fa fa-facebook"></i>
+<span class="network-name" >F.B</span>
+</a>
+</li>
+<li>
+<a href="https://github.com/jobm" target="_blank" class="btn btn-default btn-lg ">
+<i class="fa fa-twitter"></i>
+<span class="network-name">twitter</span>
+</a>
+</li>
+<li>
+<a href="h" target="_blank" class="btn btn-default btn-lg ">
+<i class="fa fa-instagram"></i>
+<span class="network-name">I.M</span>
+</a>
+</li>
+</ul>
+    <br /><br />
+<ul class="nav nav-pills">
+<li role="presentation" class="active">
+<a href="#">Home</a>
+</li>
+<li role="presentation" class="active">
+<a href="#">About</a>
+</li>
+<li role="presentation" class="active">
+<a href="#">Calculate</a>
+</li>
+</ul>
+<br />
+<p class="copyright text-muted small">Copyright © 2015 SLIM FIT. All Rights Reserved</p>
+</div>
+    
+</footer>
+    
+</body>
+
 </html>
